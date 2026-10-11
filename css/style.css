@@ -192,8 +192,7 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%) contrast(1.05);
-  opacity: 0.85;
+  opacity: 0.92;
 }
 
 .hero-overlay {
@@ -284,7 +283,6 @@ section.tight { padding: 64px 0; }
 .tile img {
   position: absolute; inset: 0;
   width: 100%; height: 100%; object-fit: cover;
-  filter: grayscale(100%);
   transition: transform 0.6s ease;
 }
 
@@ -337,7 +335,7 @@ section.tight { padding: 64px 0; }
 /* portfolio / media cards */
 .media-card { background: var(--white); position: relative; }
 .media-card .img-wrap { position: relative; aspect-ratio: 4/5; overflow: hidden; background: var(--gray-100); }
-.media-card img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: transform 0.5s ease; }
+.media-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .media-card:hover img { transform: scale(1.04); }
 .media-card .media-label { padding: 18px 20px; }
 .media-card .eyebrow { margin-bottom: 6px; }
