@@ -11,8 +11,16 @@ if (menuToggle && mobileNav) {
   );
 }
 
-// Scroll reveal
+// Scroll reveal — staggers siblings that reveal together (grid/card rows)
 const revealEls = document.querySelectorAll('.reveal');
+const siblingIndex = new Map();
+revealEls.forEach(el => {
+  const parent = el.parentElement;
+  const i = siblingIndex.get(parent) || 0;
+  el.style.setProperty('--reveal-delay', `${Math.min(i, 5) * 70}ms`);
+  siblingIndex.set(parent, i + 1);
+});
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -24,7 +32,13 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => observer.observe(el));
 
-// Header shrink/blur is handled via CSS sticky; nothing extra needed.
+// Header gains a shadow once the page scrolls past the top
+const siteHeader = document.querySelector('.site-header');
+if (siteHeader) {
+  const updateHeader = () => siteHeader.classList.toggle('scrolled', window.scrollY > 8);
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, { passive: true });
+}
 
 // Portfolio filter tabs (only present on portfolio page)
 const filterTabs = document.querySelectorAll('.filter-tab');
