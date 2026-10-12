@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — asior</title>
-<meta name="description" content="Get in touch with asior to shop our collection or start a custom manufacturing project for your business.">
+<title>Contact — Asior</title>
+<meta name="description" content="Start a custom apparel manufacturing project with Asior. Real pricing within 24 hours, no bots.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="capabilities.html">Capabilities</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="process.html">Process</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
       <a href="contact.html" class="nav-cta">Start a Project</a>
@@ -30,53 +30,79 @@
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="capabilities.html">Capabilities</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="process.html">Process</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <a href="contact.html" class="nav-cta">Start a Project</a>
 </div>
 
 <section class="page-hero">
+  <div class="pattern-grid"></div>
   <div class="wrap">
     <p class="eyebrow">Let's Talk</p>
-    <h1 class="hero-title">Get in Touch</h1>
-    <p class="hero-sub">Whether you want to order from our collection or start a custom manufacturing project, tell us a bit about what you need.</p>
+    <h1 class="hero-title">Start a Project</h1>
+    <p class="hero-sub" style="color:var(--gray-200); max-width:60ch;">Tell us about your project and you'll hear back directly from us with real pricing within 24 hours.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <div class="form-grid">
-      <form id="contact-form">
-        <div class="form-field">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-field">
-          <label for="company">Company / Brand (optional)</label>
-          <input type="text" id="company" name="company">
-        </div>
-        <div class="form-field">
-          <label>What are you looking for?</label>
-          <div class="radio-group">
-            <label class="radio-option"><input type="radio" name="inquiry-type" value="collection" checked> Shop the Collection</label>
-            <label class="radio-option"><input type="radio" name="inquiry-type" value="manufacturing"> Custom Manufacturing</label>
+      <div>
+        <div id="estimate-banner" class="estimate-banner" style="display:none;"></div>
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
           </div>
-        </div>
-        <div class="form-field">
-          <label for="quantity">Estimated Quantity (if manufacturing)</label>
-          <input type="text" id="quantity" name="quantity" placeholder="e.g. 100 pieces">
-        </div>
-        <div class="form-field">
-          <label for="message">Tell us about your project</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark">Send Message</button>
-      </form>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="company">Company / Business Name</label>
+            <input type="text" id="company" name="company" required>
+          </div>
+          <div class="form-field">
+            <label for="garment">Garment Type</label>
+            <select id="garment" name="garment">
+              <option value="Tee">Tee</option>
+              <option value="Hoodie">Hoodie / Crewneck</option>
+              <option value="Polo">Polo</option>
+              <option value="Shorts">Shorts</option>
+              <option value="Other">Other / Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="method">Decoration Method</label>
+            <select id="method" name="method">
+              <option value="Screen Print">Screen Print</option>
+              <option value="Embroidery">Embroidery</option>
+              <option value="DTG">DTG</option>
+              <option value="Puff Print">Puff Print</option>
+              <option value="Patches">Patches</option>
+              <option value="Not Sure">Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="quantity">Estimated Quantity</label>
+            <input type="text" id="quantity" name="quantity" placeholder="e.g. 100 pieces">
+          </div>
+          <div class="form-field">
+            <label for="timeline">Timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="Flexible">Flexible, no rush</option>
+              <option value="Standard">Standard (3–4 weeks)</option>
+              <option value="Date">Working toward a specific date</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">Send Message</button>
+        </form>
+      </div>
 
       <div class="contact-info-block">
         <div class="info-item">
@@ -105,14 +131,14 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo">Asior</div>
-        <p>A clothing brand and manufacturing partner. We make our line, and we make yours.</p>
+        <p>Custom apparel manufacturing for small businesses — fabric, printing, and embroidery, run in-house.</p>
       </div>
       <div class="footer-col">
         <h4>Site</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="capabilities.html">Capabilities</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="process.html">Process</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -135,7 +161,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 asior. All rights reserved.</p>
+      <p>&copy; 2026 Asior. All rights reserved.</p>
       <div class="social-links">
         <a href="https://www.instagram.com/asior_clothing/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.tiktok.com/@asiorclothing" target="_blank" rel="noopener">TikTok</a>

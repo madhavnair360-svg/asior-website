@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Capabilities — asior</title>
-<meta name="description" content="Custom apparel manufacturing for small businesses. Free samples, free design help, no hard minimums, 3-4 week turnaround.">
+<title>Capabilities — Asior</title>
+<meta name="description" content="Screen print, embroidery, DTG, puff print, patches and tags. Free samples, free design help, 1-1,000 pieces, 3-4 week turnaround. Estimate your project.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="capabilities.html" class="active">Capabilities</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="process.html">Process</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <a href="contact.html" class="nav-cta">Start a Project</a>
@@ -30,44 +30,45 @@
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="capabilities.html">Capabilities</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="process.html">Process</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <a href="contact.html" class="nav-cta">Start a Project</a>
 </div>
 
 <section class="page-hero">
+  <div class="pattern-grid"></div>
   <div class="wrap">
-    <p class="eyebrow">Custom Apparel Manufacturing</p>
-    <h1 class="hero-title">Merch your customers will actually wear.</h1>
-    <p class="hero-sub">We help small businesses launch custom apparel that looks premium — without the guesswork, the huge minimums, or the wait. Free samples, free design help, and a 3&ndash;4 week turnaround.</p>
+    <p class="eyebrow">How We Work</p>
+    <h1 class="hero-title">No Guesswork. No Huge Minimums. No Middleman.</h1>
+    <p class="hero-sub" style="color:var(--gray-200); max-width:60ch;">We source the fabric and run the printing and embroidery ourselves — so the shirts hold up, and if something's wrong, you call us.</p>
   </div>
 </section>
 
-<section>
+<section class="tight">
   <div class="wrap">
     <div class="stats reveal">
       <div class="stat">
-        <div class="num">3&ndash;4 wk</div>
-        <div class="label">Turnaround, Sample to Delivery</div>
+        <div class="num"><span data-count-to="1000" data-suffix="+">0</span></div>
+        <div class="label">Pieces, No Hard Minimum From 1</div>
       </div>
       <div class="stat">
-        <div class="num">Free</div>
-        <div class="label">Sample Before You Commit</div>
+        <div class="num"><span data-count-to="24">0</span><span class="accent-suffix">hr</span></div>
+        <div class="label">To A Real Quote</div>
       </div>
       <div class="stat">
-        <div class="num">Free</div>
-        <div class="label">Design Help on Your Artwork</div>
+        <div class="num"><span data-count-to="100" data-suffix="%">0</span></div>
+        <div class="label">Checked By Hand</div>
       </div>
       <div class="stat">
-        <div class="num">1&ndash;1,000</div>
-        <div class="label">Pieces, No Hard Minimum</div>
+        <div class="num">3&ndash;4<span class="accent-suffix"> wk</span></div>
+        <div class="label">Sample To Delivered Order</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="tight">
+<section>
   <div class="wrap">
     <div class="section-head reveal">
       <h2>What You Get</h2>
@@ -121,44 +122,133 @@
 <section class="tight" style="background:var(--gray-100);">
   <div class="wrap">
     <div class="section-head reveal">
-      <h2>How It Works</h2>
-      <p>From a logo and an idea to a finished, delivered order.</p>
+      <h2>Estimate Your Project</h2>
+      <p>Move the slider and pick a method — this gives you a ballpark, not a final price. Real pricing comes from a quote.</p>
     </div>
-    <div class="process-list reveal">
-      <div class="process-step">
-        <div class="step-num">01</div>
-        <h3>Tell Us What You Need</h3>
-        <p>Send your logo or idea and roughly how many pieces. No obligation, no guesswork.</p>
+    <div class="estimator reveal">
+      <div class="pattern-grid" style="opacity:0.4;"></div>
+      <div class="estimator-grid">
+        <div>
+          <div class="estimator-field">
+            <label>Quantity &mdash; <span class="qty-readout">50</span> pieces</label>
+            <input type="range" id="est-qty" min="1" max="1000" value="50" step="1">
+          </div>
+          <div class="estimator-field">
+            <label>Decoration Method</label>
+            <div class="pill-group">
+              <button type="button" class="pill-btn active" data-method="Screen Print">Screen Print</button>
+              <button type="button" class="pill-btn" data-method="Embroidery">Embroidery</button>
+              <button type="button" class="pill-btn" data-method="DTG">DTG</button>
+              <button type="button" class="pill-btn" data-method="Puff Print">Puff Print</button>
+              <button type="button" class="pill-btn" data-method="Patches">Patches</button>
+            </div>
+          </div>
+          <div class="estimator-field">
+            <label>Garment Type</label>
+            <div class="pill-group">
+              <button type="button" class="pill-btn active" data-garment="Tee">Tee</button>
+              <button type="button" class="pill-btn" data-garment="Hoodie">Hoodie / Crewneck</button>
+              <button type="button" class="pill-btn" data-garment="Polo">Polo</button>
+              <button type="button" class="pill-btn" data-garment="Shorts">Shorts</button>
+            </div>
+          </div>
+        </div>
+        <div class="estimator-output">
+          <div class="out-label">Your Project Looks Like</div>
+          <div class="out-tier">Small Batch</div>
+          <div class="out-row"><span>Estimated Turnaround</span><span class="out-turnaround">3–4 weeks</span></div>
+          <div class="out-row"><span>Sample</span><span class="out-sample">Free, before you commit</span></div>
+          <div class="out-row"><span>Decoration</span><span class="out-method">Screen Print on a tee</span></div>
+          <a href="contact.html" class="btn btn-accent estimator-cta">Get a Real Quote</a>
+        </div>
       </div>
-      <div class="process-step">
-        <div class="step-num">02</div>
-        <h3>Free Design &amp; Quote</h3>
-        <p>We put together real pricing and a mockup on the actual garment — usually within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>How It Works</h2>
+      <p>The short version. See the full breakdown with what we need from you at each step.</p>
+    </div>
+    <div class="process-list reveal" style="border-top:1px solid var(--border);">
+      <div style="display:grid; grid-template-columns:70px 1fr; gap:24px; padding:24px 0; border-bottom:1px solid var(--border); align-items:baseline;">
+        <div style="font-family:var(--font-display); font-weight:800; color:var(--accent); font-size:14px;">01</div>
+        <div style="font-size:16px; font-weight:600;">Tell Us What You Need</div>
       </div>
-      <div class="process-step">
-        <div class="step-num">03</div>
-        <h3>Free Sample</h3>
-        <p>Feel the weight of the fabric and see the print or embroidery in person before you commit.</p>
+      <div style="display:grid; grid-template-columns:70px 1fr; gap:24px; padding:24px 0; border-bottom:1px solid var(--border); align-items:baseline;">
+        <div style="font-family:var(--font-display); font-weight:800; color:var(--accent); font-size:14px;">02</div>
+        <div style="font-size:16px; font-weight:600;">Free Design &amp; Quote</div>
       </div>
-      <div class="process-step">
-        <div class="step-num">04</div>
-        <h3>Production</h3>
-        <p>Once the sample's approved, we schedule the full run. 3&ndash;4 weeks, on schedule.</p>
+      <div style="display:grid; grid-template-columns:70px 1fr; gap:24px; padding:24px 0; border-bottom:1px solid var(--border); align-items:baseline;">
+        <div style="font-family:var(--font-display); font-weight:800; color:var(--accent); font-size:14px;">03</div>
+        <div style="font-size:16px; font-weight:600;">Free Sample</div>
       </div>
-      <div class="process-step">
-        <div class="step-num">05</div>
-        <h3>Delivery &amp; Reorders</h3>
-        <p>Every piece checked by hand before it ships. Reordering the same fit later is just as easy.</p>
+      <div style="display:grid; grid-template-columns:70px 1fr; gap:24px; padding:24px 0; border-bottom:1px solid var(--border); align-items:baseline;">
+        <div style="font-family:var(--font-display); font-weight:800; color:var(--accent); font-size:14px;">04</div>
+        <div style="font-size:16px; font-weight:600;">Production</div>
+      </div>
+      <div style="display:grid; grid-template-columns:70px 1fr; gap:24px; padding:24px 0; align-items:baseline;">
+        <div style="font-family:var(--font-display); font-weight:800; color:var(--accent); font-size:14px;">05</div>
+        <div style="font-size:16px; font-weight:600;">Delivery &amp; Reorders</div>
+      </div>
+    </div>
+    <div style="margin-top:28px;">
+      <a href="process.html" class="text-link">See the Full Process</a>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--gray-100);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Questions</h2>
+      <p>The ones we hear most.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question"><span>What's the minimum order?</span><span class="plus"></span></button>
+        <div class="faq-answer"><p>1 to 1,000 pieces per style — there's no hard minimum. Plenty of our runs start as low as a single sample.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>How long does it take?</span><span class="plus"></span></button>
+        <div class="faq-answer"><p>3&ndash;4 weeks from an approved sample to a delivered order. If you're working toward a specific date, tell us and we'll say straight whether we can hit it.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Do you really send a free sample?</span><span class="plus"></span></button>
+        <div class="faq-answer"><p>Yes. You feel the weight of the fabric and see the print or embroidery in person before you commit to anything.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>What if I don't have finished artwork?</span><span class="plus"></span></button>
+        <div class="faq-answer"><p>Send a sketch or an idea — design help on the artwork is free, with no separate design fee.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>What print and decoration methods do you offer?</span><span class="plus"></span></button>
+        <div class="faq-answer"><p>Screen print, embroidery, DTG, puff print, patches, and tags — matched to what the design actually needs.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Can I reorder the exact same piece later?</span><span class="plus"></span></button>
+        <div class="faq-answer"><p>Yes — reorders use the same spec, so the fit and finish match your first run.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Who is this actually for?</span><span class="plus"></span></button>
+        <div class="faq-answer"><p>Small businesses — coffee shops, gyms, salons, breweries, contractors, restaurants, real estate and insurance offices, youth sports leagues. Basically anyone who wants staff shirts or merch done right.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>How do I get a real price?</span><span class="plus"></span></button>
+        <div class="faq-answer"><p>Send your logo or idea and roughly how many pieces to <a href="mailto:asiorclothing@gmail.com" class="text-link" style="font-size:inherit; text-transform:none; font-weight:400;">asiorclothing@gmail.com</a> or call/text (737) 308-0240 — you'll hear back directly from us within 24 hours. No bots.</p></div>
       </div>
     </div>
   </div>
 </section>
 
 <section class="cta-band">
+  <div class="pattern-grid" style="opacity:0.5;"></div>
   <div class="wrap">
-    <h2 class="reveal">Get real pricing in 24 hours.</h2>
-    <p class="reveal">Tell us what you need and you'll hear back directly from us with real numbers and next steps. No bots, no automated replies.</p>
-    <a href="contact.html" class="btn btn-light reveal">Start a Project</a>
+    <h2 class="reveal">Ready to start sampling?</h2>
+    <p class="reveal">Send us your idea, sketch, or reference images and we'll scope the project with you.</p>
+    <a href="contact.html" class="btn btn-accent reveal">Start a Project</a>
   </div>
 </section>
 
@@ -167,14 +257,14 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo">Asior</div>
-        <p>A clothing brand and manufacturing partner. We make our line, and we make yours.</p>
+        <p>Custom apparel manufacturing for small businesses — fabric, printing, and embroidery, run in-house.</p>
       </div>
       <div class="footer-col">
         <h4>Site</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="capabilities.html">Capabilities</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="process.html">Process</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -197,7 +287,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 asior. All rights reserved.</p>
+      <p>&copy; 2026 Asior. All rights reserved.</p>
       <div class="social-links">
         <a href="https://www.instagram.com/asior_clothing/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.tiktok.com/@asiorclothing" target="_blank" rel="noopener">TikTok</a>
